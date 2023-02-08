@@ -1,18 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Recipe</title>
+        
+<style>
+    html{ font-family: 'Courier New', Courier, monospace;
+    font-size: 150%;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 300;
+
+}
+.item img:hover{
+    transform: scale(1.05);
+    transition: all ease ;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgb(136, 219, 140);
+}
+
+
+.heading{
+    font-size: 62px; 
+    font-family: 'Courier New', cursive;
+}
+
+a{
+    text-decoration:none;
+}
+#logo{
+    width: 100px;
+    height:100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.heading,
+.recipe-title{
+    text-align: center;
+}
+h3{
+    font-weight: bold;
+}
+.content{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ font-size: 20px;
+ gap:50px;
+}
+
+div img{
+    
+    width:350px;
+    height:500px;
+    border-radius: 4%;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    align-items:center;
+    width:400px;
+    text-align: center;
+}
+
+.left{
+    
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding-left: 30px;
+    width:420px;
+    height: 1507px;
+}
+.left img{
+    border-radius: 10px;
+
+}
+.content{
+    gap: 50px;
+    display:flex;
+    flex-direction:row;
+}
+
+
+.right-top{
+    border-radius: 10px;
+    border:1px solid rgb(41, 41, 41);
+    height:500px;
+}
+
+ul{
+    list-style-type: none;
+    padding:0;  
+}
+
+.steps-container{   
+    margin-top:20px;
+    border-radius: 10px;
+    border:1px solid rgb(71, 71, 71);
+    height: 987px;
+
+}
+
+.ingredients-container{
+    border-radius: 10px;
+    background-color: rgb(240, 236, 230);
+    padding:20px;
+    flex-grow: 3;
+}
+
+.right-top,
+.steps-container{
+    padding:0 20px 0px 20px;
+}
+
+
+</style>
 </head>
 <body>
-    <h1>Odin Recipes</h1>
-        <h3>Recipe List</h3>
-            <ul>
-                <a href="recipes/lasagna.html"><li>Lasagna</li>
-                <a href="recipes/Beefstew.html"><li>Beef Stew</li></a>
-                <a href="recipes/Mashedpotatoes.html"><li>Mashed Potatoes</li>
-            </ul>
-</body>
+  <center><h1><b>Odins Recipes</b></h1>
+<h3>Recipe List</h3>
+    <div>
+       <a href="index.html"></a>
+    <div class="content">
+        <div class="item">
+                <a href="recipes/lasagna.html">
+                    <img src="https://www.lecremedelacrumb.com/wp-content/uploads/2020/02/make-ahead-lasagna-2sm-4.jpg" height="400" width="700">
+                </a>
+        </div>
+        <div class="item">
+        <a href="recipes/Beefstew.html">
+                    <img src="https://www.allrecipes.com/thmb/JyQj7WHtdy1JuLd-3T3kRnESqiQ=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Slow-Cooker-Beef-Stew-Recipe--f0f1dfed402d433f9f08ad79a1447689.jpeg" alt="">
+                </a>
+        </div>
+        <div class="item">        
+        <a href="recipes/Mashedpotatoes.html">
+                    <img src="https://bellyfull.net/wp-content/uploads/2020/02/Best-Mashed-Potatoes-blog.jpg" alt="">
+                </div>  
+         </div>
+    </body>
 </html>
